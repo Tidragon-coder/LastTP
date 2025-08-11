@@ -1,5 +1,9 @@
-import { Helmet} from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async'; // Not compatinble with React19, for now we use a useEffect 
+import { useEffect } from 'react';
 export default function Home() {
+
+    useEffect(() => {document.title = "LastRP - Home";}, []); // Temporary solution for setting the title
+
     return (
         <div>
             <Helmet>
