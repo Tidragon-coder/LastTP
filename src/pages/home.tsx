@@ -1,11 +1,15 @@
 import { Helmet } from 'react-helmet-async'; // Not compatinble with React19, for now we use a useEffect 
 import { useEffect } from 'react';
+import Header from '../components/organisms/header';
+
 export default function Home() {
 
     useEffect(() => {document.title = "LastRP - Home";}, []); // Temporary solution for setting the title
 
     return (
+
         <div>
+            <Header logoSrc="src/assets/media/logo/logoTest.png" />
             <Helmet>
                 <title>LastRP - Home</title>
                 <meta name="description" content="Welcome to LastRP, the home page of our application." />
