@@ -9,7 +9,7 @@ export default function Home() {
     return (
 
         <div>
-            <Header logoSrc="src/assets/media/logo/logoTest.png" />
+            <Header/>
             <Helmet>
                 <title>LastRP - Home</title>
                 <meta name="description" content="Welcome to LastRP, the home page of our application." />

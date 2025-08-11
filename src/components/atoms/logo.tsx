@@ -5,6 +5,6 @@ type LogoProps = {
 
 export default function Logo({ src, alt = 'Server Logo' }: LogoProps) {
   return (
-    <img src={src} alt={alt} className="h-10 w-auto" />
+    <img src={src} alt={alt} className="h-20 w-auto" />
   );
 }
