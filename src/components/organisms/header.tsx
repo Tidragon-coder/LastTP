@@ -6,7 +6,7 @@ import Button from '../atoms/button';
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center px-6 py-2 bg-white shadow-md">
+    <header className="flex justify-between items-center px-6 py-2 bg-black shadow-md">
       <div className="flex items-center space-x-4">
         <Logo src={'src/assets/media/logo/logo-lastRP-xs.png'} />
         <Button href="#login" color="danger" size="medium">
