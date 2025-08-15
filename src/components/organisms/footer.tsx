@@ -22,7 +22,8 @@ export default function Footer() {
               { text: "Accueil", href: "/" },
               { text: "À propos", href: "/about" },
               { text: "Équipe", href: "/team" },
-              { text: "Contact", href: "/contact" },
+              { text: "Réglement", href: "/reglement" },
+              { text: "Discord", href: "#didi" },
             ]}
           />
           <FooterColumn

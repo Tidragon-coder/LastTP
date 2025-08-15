@@ -1,17 +1,19 @@
-import Button from '../components/atoms/button';
+import { useEffect } from 'react';
 import Header from '../components/organisms/header';
 import Footer from '../components/organisms/footer';
 
 import BgPrincip from '../components/organisms/bgPicture';
-
+import ReglementSection from '../components/organisms/reglementSection';
 
 export default function Wiki() {
+    useEffect(() => { document.title = "LastRP - Réglement"; }, []);
     return (
         <>
             <Header />
-            <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP - Régléments' sousTitre='Réglementation du serveur' />
-            <h1 className='text-4xl font-bold text-white'>Page wiki</h1>
-            <Button size='medium' href='/' color='secondary'>Home</Button>
+            
+            <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP - Régléments' sousTitre='Réglementation du serveur' hSize={'50vh'}/>
+            <ReglementSection />
+        
             <Footer />
         </>
     )

@@ -1,5 +1,5 @@
 import StatCard from "../atoms/statCard";
-import Title from "../atoms/title";
+import Title from "../atoms/titlePart";
 export default function StatsSection() {
     return (
         <>

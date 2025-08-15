@@ -1,4 +1,4 @@
-import Title from "../atoms/title";
+import Title from "../atoms/titlePart";
 
 export default function DescriptionSection() {
   return (

@@ -1,4 +1,4 @@
-import Title from "../atoms/title";
+import Title from "../atoms/titlePart";
 import TeamMemberCard from "../molecules/teamMemberCard";
 
 import userImg from '../../assets/media/img-team/user-icon.png'; // Placeholder image, replace with actual images
