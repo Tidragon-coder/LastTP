@@ -18,7 +18,7 @@ export default function NgPicture({ image, titre, sousTitre }: NgPictureProps) {
 
      
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-4 text-center">
-        <h1 className="text-6xl font-extrabold drop-shadow-lg select-none">{titre}</h1>
+        <h1 className="text-6xl font-bebas drop-shadow-lg select-none">{titre}</h1>
         <p className="mt-4 text-xl drop-shadow-md select-none">{sousTitre}</p>
       </div>
     </div>
