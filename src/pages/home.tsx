@@ -20,7 +20,7 @@ export default function Home() {
             </Helmet>
 
             <Header />
-            <div className="flex flex-col gap-24">
+            <div className="flex flex-col gap-24 ">
 
                 <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP' sousTitre='XX joueurs en ligne' />
                 <DescriptionSection />
