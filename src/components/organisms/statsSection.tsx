@@ -3,7 +3,7 @@ import Title from "../atoms/titlePart";
 export default function StatsSection() {
     return (
         <>
-                <div className="flex justify-center mb-20">
+                <div className="flex justify-center ">
                     <Title text="Statistiques du serveur" />
                 </div>
             <section className="w-full px-6 py-12 bg-black">

@@ -13,19 +13,22 @@ export default function Home() {
 
     return (
 
-        <div>
+        <div >
             <Helmet>
                 <title>LastRP - Home</title>
                 <meta name="description" content="Welcome to LastRP, the home page of our application." />
             </Helmet>
 
             <Header />
+            <div className="flex flex-col gap-24">
 
-            <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP' sousTitre='XX joueurs en ligne' />
-            <DescriptionSection />
-            <StatSection />
-            <TeamSection />
-            <Footer />
+                <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP' sousTitre='XX joueurs en ligne' />
+                <DescriptionSection />
+                <StatSection />
+                <TeamSection />
+                <Footer />
+                
+            </div>
 
 
         </div>

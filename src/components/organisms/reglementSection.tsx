@@ -13,7 +13,7 @@ export default function ReglementSection() {
                 <ReglementCard
                     image={'src/assets/media/img-back/fiveM.png'}
                     title="Réglement Global"
-                    link="/reglement-globale"
+                    link="/reglement-global"
                     className="scale-105 shadow-lg shadow-blue-500/30"
                 />
                 <ReglementCard
