@@ -2,16 +2,21 @@ import Header from "../components/organisms/header";
 import Footer from "../components/organisms/footer";
 
 import BgPrincip from "../components/organisms/bgPicture";
+import RulesContentRL from "../components/organisms/rulesContentRL";
+import SummarySidebar from "../components/organisms/summarySidebar";
 
-export default function ReglementLegal() {
+export default function ReglementGlobal() {
     return (
-        <div>
+        <div >
             <Header />
-            <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP - Réglement Légal' sousTitre='Ce règlement définit les règles légales du serveur LastRP. ' hSize={'50vh'} />
-            <div className="container mx-auto px-6 py-12 text-white">
-                <h1 className="text-4xl font-bold mb-6">Règlement Légal</h1>
-                <p className="text-lg mb-4">Bienvenue dans le règlement légal de LastRP. Ce document est essentiel pour garantir une expérience de jeu juste et agréable pour tous les joueurs.</p>
-                <p className="text-lg mb-4">Veuillez lire attentivement chaque section et vous assurer de respecter toutes les règles énoncées.</p>
+            <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP - Régléments Légal' sousTitre='Ce règlement définit les règles de base du serveur LastRP. Tout joueur doit en prendre connaissance avant de jouer' hSize={'50vh'} />
+            <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-12 text-white">
+                <div className="md:col-span-3">
+                    <RulesContentRL />
+                </div>
+                <div className="hidden md:block md:col-span-1">
+                    <SummarySidebar type="legal" />
+                </div>
             </div>
             <Footer />
         </div>
