@@ -1,4 +1,4 @@
-import TitlePart from "../atoms/titlePartRG";
+
 import RuleItem from "../atoms/ruleItem";
 
 type RuleSectionProps = {
@@ -6,16 +6,21 @@ type RuleSectionProps = {
   title: string;
   description?: string;
   rules?: string[];
+  level?: number; // 0 = section principale, 1 = sous-section, 2 = sous-sous-section
 };
 
-export default function RuleSection({ id, title, description, rules }: RuleSectionProps) {
+export default function RuleSection({ id, title, description, rules, level = 0 }: RuleSectionProps) {
+  const indentClass = level === 0 ? "pl-0" : level === 1 ? "pl-6" : "pl-12";
+  const titleSizeClass = level === 0 ? "text-2xl" : level === 1 ? "text-xl" : "text-lg";
+  const borderClass = level === 0 ? "border-t border-gray-700 pt-4 mt-4" : "pt-2 mt-2";
+
   return (
-    <section className="mb-12" id={id}>
-      <TitlePart text={title} id={id} />
+    <section className={`${indentClass} ${borderClass}`} id={id}>
+      <h2 className={`${titleSizeClass} font-semibold mb-2`}>{title}</h2>
       {description && <p className="mb-4 text-gray-300">{description}</p>}
 
       {rules && (
-        <ul className="list-none pl-2">
+        <ul className="list-decimal list-inside text-sm text-gray-300">
           {rules.map((rule, i) => (
             <RuleItem key={i} text={rule} number={i + 1} />
           ))}
@@ -24,3 +29,4 @@ export default function RuleSection({ id, title, description, rules }: RuleSecti
     </section>
   );
 }
+
