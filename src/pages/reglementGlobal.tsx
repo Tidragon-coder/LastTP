@@ -2,7 +2,7 @@ import Header from "../components/organisms/header";
 import Footer from "../components/organisms/footer";
 
 import BgPrincip from "../components/organisms/bgPicture";
-import RulesContent from "../components/organisms/rulesContent";
+import RulesContent from "../components/organisms/rulesContentRG";
 import SummarySidebar from "../components/organisms/summarySidebar";
 
 export default function ReglementGlobal() {
@@ -15,7 +15,7 @@ export default function ReglementGlobal() {
                     <RulesContent />
                 </div>
                 <div className="hidden md:block md:col-span-1">
-                    <SummarySidebar />
+                    <SummarySidebar type="global" />
                 </div>
             </div>
             <Footer />
