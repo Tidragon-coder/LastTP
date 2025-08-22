@@ -20,7 +20,7 @@ export default function RuleSection({ id, title, description, rules, level = 0 }
       {description && <p className="mb-4 text-gray-300">{description}</p>}
 
       {rules && (
-        <ul className="list-decimal list-inside text-sm text-gray-300">
+        <ul className="list-decimal list-inside text-sm text-gray-300 ml-8">
           {rules.map((rule, i) => (
             <RuleItem key={i} text={rule} number={i + 1} />
           ))}

@@ -4,6 +4,7 @@ import Reglement from "./pages/reglement";
 import ReglementGlobal from "./pages/reglementGlobal";
 import ReglementLegal from "./pages/reglementLegal";
 import ReglementIllegal from "./pages/reglementIllegal";
+import Discord from "./pages/discord";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/reglement-global" element={<ReglementGlobal />} />
         <Route path="/reglement-legal" element={<ReglementLegal />} />
         <Route path="/reglement-illegal" element={<ReglementIllegal />} />
+        <Route path="/discord" element={<Discord />} />
       </Routes>
     </Router>
   );

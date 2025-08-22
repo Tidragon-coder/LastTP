@@ -28,7 +28,7 @@ export default function Navigation() {
       </div>
 
 
-      <NavLink href="#about">Discord</NavLink>
+      <NavLink href="/discord">Discord</NavLink>
     </nav>
   );
 }

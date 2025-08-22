@@ -7,18 +7,18 @@ export default function ReglementSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
                 <ReglementCard
                     image={'src/assets/media/img-back/fiveM.png'}
-                    title="Réglement Légal"
+                    title="Règlement Légal"
                     link="/reglement-legal"
                 />
                 <ReglementCard
                     image={'src/assets/media/img-back/fiveM.png'}
-                    title="Réglement Global"
+                    title="Règlement Global"
                     link="/reglement-global"
                     className="scale-105 shadow-lg shadow-blue-500/30"
                 />
                 <ReglementCard
                     image={'src/assets/media/img-back/fiveM.png'}
-                    title="Réglement Illégal"
+                    title="Règlement Illégal"
                     link="/reglement-illegal"
                 />
             </div>
