@@ -91,6 +91,13 @@ const DISCORDS: {
             image: "src/assets/media/discord/Dynasty8.png",
             description: " Avoir une maison pour se loger, c'est mieux, tu ne trouves pas ?",
         },
+        {
+            id: "13",
+            title: "LastRP - Bahamas",
+            link: "https://discord.gg/8YCZ9q2E",
+            image: "src/assets/media/discord/Bahamas.png",
+            description: "Un bon streepteese ne fait jamais de mal.",
+        },
     ];
 
 
