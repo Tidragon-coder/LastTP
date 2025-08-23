@@ -3,12 +3,14 @@ import Footer from "../components/organisms/footer";
 
 
 import BgPrincip from '../components/organisms/bgPicture';
+import DiscordPart from "../components/organisms/discordPart";
 
 export default function Discord() {
     return (
         <div >
             <Header />
             <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP - Les Discord' sousTitre='Rejoignez-nous sur Discord' hSize={'50vh'} />
+            <DiscordPart />
             <Footer />
         </div>
     );
