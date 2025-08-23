@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import Header from "../components/organisms/header";
 import Footer from "../components/organisms/footer";
 
@@ -6,6 +8,8 @@ import RulesContentRG from "../components/organisms/rulesContentRG";
 import SummarySidebar from "../components/organisms/summarySidebar";
 
 export default function ReglementGlobal() {
+        useEffect(() => { document.title = "LastRP - Réglements Globaux"; }, []); // Temporary solution for setting the title
+    
     return (
         <div >
             <Header />

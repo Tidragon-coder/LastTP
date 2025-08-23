@@ -2,7 +2,7 @@ import Title from "../atoms/titlePart";
 
 export default function DescriptionSection() {
   return (
-    <section className="w-full px-6 py-12 bg-black text-white">
+    <section className="w-full px-6 bg-gray-950 text-white">
       {/* Titre centré */}
       <div className="flex justify-center mb-20">
         <Title text="À propos de LastRP" />
@@ -15,7 +15,7 @@ export default function DescriptionSection() {
             LastRP est un serveur de jeu immersif qui vous plonge dans un monde
             vivant et dynamique où chaque action compte. Rejoignez une
             communauté active, participez à des événements uniques, et
-            construisez votre propre histoire. Que vous choisissiez d’être un
+            construisez votre propre histoire. <br /><br /> Que vous choisissiez d’être un
             citoyen modèle, un entrepreneur ambitieux ou un criminel
             redoutable, les possibilités sont infinies. Avec une équipe dédiée à
             offrir des mises à jour régulières et un gameplay équilibré, LastRP

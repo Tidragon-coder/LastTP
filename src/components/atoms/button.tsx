@@ -17,7 +17,7 @@ const sizeClasses = {
 const colorClasses = {
   primary: 'bg-blue-600 text-white hover:bg-blue-700',
   secondary: 'bg-gray-500 text-white hover:bg-gray-600',
-  danger: 'bg-red-600 text-white hover:bg-red-700',
+  danger: 'bg-red-600 text-white hover:bg-red-700 text-md',
 };
 
 export default function Button({
@@ -31,7 +31,7 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <a href={href} className={classes} target='_blank' >
         {children}
       </a>
     );

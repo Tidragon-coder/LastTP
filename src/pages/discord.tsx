@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import Header from "../components/organisms/header";
 import Footer from "../components/organisms/footer";
 
@@ -6,6 +8,7 @@ import BgPrincip from '../components/organisms/bgPicture';
 import DiscordPart from "../components/organisms/discordPart";
 
 export default function Discord() {
+        useEffect(() => { document.title = "LastRP - Discord"; }, []); // Temporary solution for setting the title
     return (
         <div >
             <Header />

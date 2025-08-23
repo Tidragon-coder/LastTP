@@ -5,7 +5,7 @@ import userImg from '../../assets/media/img-team/user-icon.png'; // Placeholder 
 
 export default function TeamSection() {
   return (
-    <section className="w-full px-6 py-12 bg-black">
+    <section className="w-full px-6 py-12 ">
       <div className="flex justify-center mb-28">
         <Title text="L'équipe" />
       </div>

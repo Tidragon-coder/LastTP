@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <nav className="flex space-x-6 relative">
       <NavLink href="/">Accueil</NavLink>
-      <NavLink href="#rules">Boutique</NavLink>
+      <NavLink href="#rules" importante={true}>Boutique</NavLink>
       <NavLink href="#forum">Wiki</NavLink>
 
 

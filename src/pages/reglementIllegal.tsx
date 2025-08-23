@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import Header from "../components/organisms/header";
 import Footer from "../components/organisms/footer";
 
@@ -5,7 +7,8 @@ import BgPrincip from "../components/organisms/bgPicture";
 import RulesContentRI from "../components/organisms/rulesContentRI";
 import SummarySidebar from "../components/organisms/summarySidebar";
 
-export default function ReglementGlobal() {
+export default function ReglementIllegal() {
+    useEffect(() => { document.title = "LastRP - Réglements Illegal"; }, []); // Temporary solution for setting the title
     return (
         <div >
             <Header />
