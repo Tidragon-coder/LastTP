@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import DiscordCard from "../molecules/discordCards";
 
 const DISCORDS: {
@@ -102,15 +105,43 @@ const DISCORDS: {
 
 
 export default function DiscordPage() {
-    return (
-        <div className="min-h-screen bg-gray-950 py-12 px-6">
-            <h1 className="text-3xl font-bold text-white mb-16 text-center">📢 Tous les Discords</h1>
+      const [search, setSearch] = useState("");
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {DISCORDS.map((discord) => (
-                    <DiscordCard key={discord.id} {...discord} />
-                ))}
-            </div>
+  const filteredDiscords = DISCORDS.filter(
+    (d) =>
+      d.title.toLowerCase().includes(search.toLowerCase()) ||
+      d.description.toLowerCase().includes(search.toLowerCase())
+  );
+    return (
+    <div className="min-h-screen bg-gray-950 py-12 px-6">
+      <h1 className="text-3xl font-bold text-white mb-10 text-center">
+        📢 Tous les Discords
+      </h1>
+
+      {/* Champ de recherche */}
+      <div className="max-w-md mx-auto mb-12">
+        <input
+          type="text"
+          placeholder="🔍 Rechercher un Discord..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full px-4 py-2 rounded-lg border border-gray-700 bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500"
+        />
+      </div>
+
+      {/* Résultats */}
+      {filteredDiscords.length > 0 ? (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {filteredDiscords.map((discord) => (
+            <DiscordCard key={discord.id} {...discord} />
+          ))}
         </div>
-    );
+      ) : (
+        <p className="text-center text-gray-400">
+          Aucun Discord ne correspond à ta recherche.
+        </p>
+      )}
+    </div>
+  );
 }
+
