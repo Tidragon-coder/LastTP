@@ -3,10 +3,10 @@ import FooterColumn from "../molecules/footerColumn";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-300 px-6 py-10 border-t border-gray-700">
+    <footer className="bg--950 text-gray-300 px-6 py-10 border-t border-gray-700">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         
-        {/* Logo & description */}
+        
         <div className="flex-1">
           <Logo src={'src/assets/media/logo/logo-lastRP-xs.png'} />
           <p className="mt-4 text-sm">
@@ -23,7 +23,7 @@ export default function Footer() {
               { text: "À propos", href: "/about" },
               { text: "Équipe", href: "/team" },
               { text: "Réglement", href: "/reglement" },
-              { text: "Discord", href: "#didi" },
+              { text: "Discord", href: "/discord" },
             ]}
           />
           <FooterColumn

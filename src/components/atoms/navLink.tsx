@@ -4,15 +4,18 @@ type NavLinkProps = {
   children: ReactNode;
   className?: string;
   importante?: boolean;
+  onClick?: () => void;
 };
 
-export default function NavLink({ href, children, className, importante }: NavLinkProps) {
+export default function NavLink({ href, children, className, importante, onClick}: NavLinkProps) {
   return (
     <a
       href={href}
-      className={`${importante ? "text-gray-200" : ""} text-white hover:text-[#14b9b9] px-3 py-2 rounded-md text-md font-medium ${className ?? ""}`} 
+      onClick={onClick}
+      className={` text-white hover:text-[#14b9b9] px-3 py-2 rounded-md text-md font-medium ${className ?? ""}`} 
     >
-      {children}
+      {importante ? "🎁" : ""}{children}
+
     </a>
   );
 }

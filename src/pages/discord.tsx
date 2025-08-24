@@ -12,7 +12,7 @@ export default function Discord() {
     return (
         <div >
             <Header />
-            <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='LastRP - Les Discords' sousTitre='Rejoignez-nous sur Discord' hSize={'50vh'} />
+            <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='Les Discords' sousTitre='Rejoignez-nous sur Discord' hSize={'50vh'} />
             <DiscordPart />
             <Footer />
         </div>

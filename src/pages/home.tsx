@@ -22,7 +22,7 @@ export default function Home() {
             <Header />
             <div className="flex flex-col gap-20 ">
 
-                <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='Last RolePlay ' sousTitre='XX joueurs en ligne' home={true} />
+                <BgPrincip image={'src/assets/media/img-back/BGLastRP.png'} titre='Last RolePlay ' sousTitre='XX joueurs en ligne' home={true} />
                 <DescriptionSection />
                 <StatSection />
                 <TeamSection />

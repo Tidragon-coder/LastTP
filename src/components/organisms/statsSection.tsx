@@ -2,7 +2,7 @@ import StatCard from "../atoms/statCard";
 import Title from "../atoms/titlePart";
 export default function StatsSection() {
     return (
-        <>
+        <div className="mt-20">
             <div className="flex justify-center ">
                 <Title text="Statistiques du serveur" />
             </div>
@@ -34,6 +34,6 @@ export default function StatsSection() {
                     />
                 </div>
             </section>
-        </>
+        </div>
     );
 }
