@@ -31,7 +31,11 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes} target='_blank' >
+      <a
+        href={href}
+        className={classes}
+        target={color === 'danger' ? "_blank" : undefined}
+      >
         {children}
       </a>
     );

@@ -3,7 +3,7 @@ import FooterColumn from "../molecules/footerColumn";
 
 export default function Footer() {
   return (
-    <footer className="bg--950 text-gray-300 px-6 py-10 border-t border-gray-700">
+    <footer className="bg-gray-900 text-gray-300 px-6 py-10 border-t border-gray-700">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10">
         
         
