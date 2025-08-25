@@ -9,7 +9,7 @@ export default function NotFoundPage() {
         <>
             <Header />
             <BgPrincip
-                image={'src/assets/media/img-back/fiveM.png'}
+                image={'src/assets/media/img-back/BGLastRP.png'}
                 titre='LastRP - Oups...'
                 sousTitre="Cette page n'existe pas 🚧"
                 

@@ -21,7 +21,7 @@ export default function Navigation() {
       <div className="hidden md:flex space-x-6">
         <NavLink href="/">Accueil</NavLink>
         <NavLink href="#rules" importante={true}>Boutique</NavLink>
-        <NavLink href="#forum">Wiki</NavLink>
+        <NavLink href="/wiki">Wiki</NavLink>
 
         {/* Dropdown */}
         <div className="relative group text-white px-3 py-2 rounded-md text-md font-medium">
@@ -53,7 +53,7 @@ export default function Navigation() {
           <NavLink href="#rules" importante={true} onClick={() => setIsOpen(false)}>
             Boutique
           </NavLink>
-          <NavLink href="#forum" onClick={() => setIsOpen(false)}>
+          <NavLink href="/wiki" onClick={() => setIsOpen(false)}>
             Wiki
           </NavLink>
 

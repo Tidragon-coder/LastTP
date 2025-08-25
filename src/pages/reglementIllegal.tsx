@@ -12,7 +12,7 @@ export default function ReglementIllegal() {
     return (
         <div >
             <Header />
-            <BgPrincip image={'src/assets/media/img-back/fiveM.png'} titre='Règlements Illegal' sousTitre='Ce règlement définit les règles de base du serveur LastRP. Tout joueur doit en prendre connaissance avant de jouer' hSize={'50vh'} />
+            <BgPrincip image={'src/assets/media/img-back/BGLastRP.png'} titre='Règlements Illegal' sousTitre='Ce règlement définit les règles de base du serveur LastRP. Tout joueur doit en prendre connaissance avant de jouer' hSize={'50vh'} />
             <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-12 text-white">
                 <div className="md:col-span-3">
                     <RulesContentRI />

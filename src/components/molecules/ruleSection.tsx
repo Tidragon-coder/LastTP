@@ -36,13 +36,13 @@ export default function RuleSection({
         </span>
       </h2>
 
-      {/* Contenu affiché uniquement si open */}
+
       {open && (
         <div className="pl-2">
           {description && <p className="mb-4 text-gray-300">{description}</p>}
 
           {rules && (
-            <ul className="list-decimal list-inside text-sm text-gray-300 ml-8">
+            <ul className="list-decimal list-inside  text-gray-300 ml-8">
               {rules.map((rule, i) => (
                 <RuleItem key={i} text={rule} number={i + 1} />
               ))}

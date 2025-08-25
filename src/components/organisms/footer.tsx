@@ -20,7 +20,7 @@ export default function Footer() {
             title="Navigation"
             links={[
               { text: "Accueil", href: "/" },
-              { text: "À propos", href: "/about" },
+              { text: "Wiki", href: "/wiki" },
               { text: "Équipe", href: "/team" },
               { text: "Réglement", href: "/reglement" },
               { text: "Discord", href: "/discord" },
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bas du footer */}
+
       <div className="border-t border-gray-700 mt-8 pt-4 text-center text-xs text-gray-500">
         © {new Date().getFullYear()} LastRP. Tous droits réservés.
       </div>
