@@ -25,7 +25,7 @@ export default function Navigation() {
 
         {/* Dropdown */}
         <div className="relative group text-white px-3 py-2 rounded-md text-md font-medium">
-          <NavLink href="/reglement" className="text-white hover:text-blue-400">
+          <NavLink href="/reglement" className="text-white hover:#14b9b9">
             Règlement
           </NavLink>
           <div className="absolute left-0 mt-2 hidden w-48 rounded-lg bg-gray-800 shadow-lg group-hover:block">

@@ -1,36 +1,74 @@
-import ReglementCard from "../organisms/ReglementCard";
+import CardsPart from "./wiki/cardsPart";
 
 export default function ReglementSection() {
   return (
-    <div className="container mx-auto px-4 py-32">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
-        {/* Rangée de 3 */}
-        <ReglementCard
-          image={"src/assets/media/img-back/ReglementL.png"}
-          title=""
-          link="/reglement-legal"
-        />
-        <ReglementCard
-          image={"src/assets/media/img-back/fiveM.png"}
-          title="Règlement Global"
-          link="/reglement-global"
-          className="scale-105 shadow-lg shadow-blue-500/30"
-        />
-        <ReglementCard
-          image={"src/assets/media/img-back/fiveM.png"}
-          title="Règlement Illégal"
-          link="/reglement-illegal"
-        />
+    <section className="py-12">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">
+              Explorez notre Règlement
+            </h2>
+    
+            <div className="flex flex-wrap justify-center gap-6">
+              <CardsPart
+                title="Règlement Global"
+                subtitle="Reglementation de LastRP"
+                link="/rglement-global"
+                reglement={true}
+              />
+              <CardsPart
+                title="Règlement Legal"
+                subtitle="Reglementation des métiers légaux"
+                link="/reglement-legal"
+                reglement={true}
+              />
+              <CardsPart
+                title="Règlement Illégal"
+                subtitle="Reglementation des métiers illégaux"
+                link="/reglement-illegal"
+                reglement={true}
+              />
+              <CardsPart
+                title="Règlement Discord"
+                subtitle="La reglementation de nos Discord"
+                link="/reglement-discord"
+                reglement={true}
+              />
+            </div>
+          </div>
+        </section>
 
-        {/* Bloc centré en dessous */}
-        <div className="col-span-1 md:col-span-3 mt-8 flex justify-center">
-          <ReglementCard
-            image={"src/assets/media/img-back/fiveM.png"}
-            title="Règlement Discord"
-            link="/reglement-discord"
-          />
-        </div>
-      </div>
-    </div>
+
+
+
+    // <div className="container mx-auto px-4 py-32 space-y-10">
+    //   {/* Première ligne */}
+    //   <div className="flex flex-col md:flex-row md:space-x-6 justify-center">
+    //     <ReglementCard
+    //       image={"src/assets/media/img-back/ReglementL.png"}
+    //       title="Règlement Legal"
+    //       link="/reglement-legal"
+    //     />
+    //     <ReglementCard
+    //       image={"src/assets/media/img-back/fiveM.png"}
+    //       title="Règlement Global"
+    //       link="/reglement-global"
+    //       // className="scale-105 shadow-lg shadow-blue-500/30"
+    //     />
+    //   </div>
+
+    //   {/* Deuxième ligne */}
+    //   <div className="flex flex-col md:flex-row md:space-x-6 justify-center">
+    //     <ReglementCard
+    //       image={"src/assets/media/img-back/fiveM.png"}
+    //       title="Règlement Illégal"
+    //       link="/reglement-illegal"
+    //     />
+    //     <ReglementCard
+    //       image={"src/assets/media/img-back/fiveM.png"}
+    //       title="Règlement Discord"
+    //       link="/reglement-discord"
+    //     />
+    //   </div>
+    // </div>
   );
 }
