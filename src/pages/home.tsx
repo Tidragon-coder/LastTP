@@ -1,36 +1,53 @@
-// import { Helmet } from 'react-helmet-async'; // Not compatinble with React19, for now we use a useEffect 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../components/organisms/header';
 import BgPrincip from '../components/organisms/bgPicture';
 import DescriptionSection from '../components/organisms/descriptionSection';
 import StatSection from '../components/organisms/statsSection';
 import TeamSection from '../components/organisms/teamSection';
 import Footer from '../components/organisms/footer';
+import { getPlayerCount } from '../api/fiveM';
 
 export default function Home() {
+    useEffect(() => {
+        document.title = "LastRP - Home";
+    }, []);
 
-    useEffect(() => { document.title = "LastRP - Home"; }, []); // Temporary solution for setting the title
+    const [nbjoueurs, setNbJoueurs] = useState<number | null>(null);
+
+    useEffect(() => {
+        const fetchAndLogPlayerCount = async () => {
+            try {
+                const count = await getPlayerCount();
+                setNbJoueurs(count);
+            } catch (err) {
+                console.error(err);
+            }
+        };
+
+        fetchAndLogPlayerCount();
+    }, []);
 
     return (
-
-        <div >
-            {/* <Helmet>
-                <title>LastRP - Home</title>
-                <meta name="description" content="Welcome to LastRP, the home page of our application." />
-            </Helmet> */}
-
+        <div>
             <Header />
-            <div className="flex flex-col gap-20 ">
+            <div className="flex flex-col gap-20">
+                <BgPrincip
+                    image={'src/assets/media/img-back/BGLastRP.png'}
+                    titre='Last RolePlay'
+                    sousTitre={
+                        nbjoueurs !== null
+                            ? `${nbjoueurs} ${nbjoueurs > 1 ? 'joueurs' : 'joueur'} en ligne`
+                            : 'Chargement...'
+                    }
 
-                <BgPrincip image={'src/assets/media/img-back/BGLastRP.png'} titre='Last RolePlay ' sousTitre='XX joueurs en ligne' home={true} />
+
+                    home={true}
+                />
                 <DescriptionSection />
                 <StatSection />
                 <TeamSection />
                 <Footer />
-                
             </div>
-
-
         </div>
     );
 }
