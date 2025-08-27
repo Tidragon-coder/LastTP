@@ -5,14 +5,14 @@ export default function ReglementSection() {
     <section className="py-12">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">
-              Explorez notre Règlement
+              Explorez nos Règlements
             </h2>
     
             <div className="flex flex-wrap justify-center gap-6">
               <CardsPart
                 title="Règlement Global"
                 subtitle="Reglementation de LastRP"
-                link="/rglement-global"
+                link="/reglement-global"
                 reglement={true}
               />
               <CardsPart

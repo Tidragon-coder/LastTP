@@ -1,6 +1,10 @@
 import StatCard from "../atoms/statCard";
 import Title from "../atoms/titlePart";
 export default function StatsSection() {
+    var tdy = new Date();
+    var end = new Date('2025-12-20');
+    var diff = end.getTime() - tdy.getTime();
+    var days = Math.ceil(diff / (1000 * 3600 * 24));
     return (
         <div className="mt-20">
             <div className="flex justify-center ">
@@ -9,28 +13,28 @@ export default function StatsSection() {
             <section className="w-full px-6 py-12 bg-gray-950">
                 <div className="flex flex-col md:flex-row justify-around items-center gap-10">
                     <StatCard
-                        number={500}
+                        number={days}
+                        add="J"
+                        title="Avant la sortie officielle"
+                        description="RDV le 20 Décembre 2025."
+                    />
+                    <StatCard
+                        number={30}
                         add="+"
-                        title="Joueurs actifs"
-                        description="Connectés chaque jour sur le serveur."
+                        title="Membres discord"
+                        description="Rejoignez notre communauté dans l'onglet Discord."
                     />
                     <StatCard
-                        number={1200}
+                        number={20}
                         add="+"
-                        title="Missions terminées"
-                        description="Depuis le lancement du serveur."
+                        title="Personnes du Staff"
+                        description="Présents pour vous aider."
                     />
                     <StatCard
-                        number={98}
-                        add="%"
-                        title="Satisfaction"
-                        description="Basée sur les retours des joueurs."
-                    />
-                    <StatCard
-                        number={24}
-                        add="/7"
-                        title="Serveur en ligne"
-                        description="Toujours prêt à vous accueillir."
+                        number={5}
+                        add="+"
+                        title="Streamers partenaires"
+                        description="Ils parlent de nous."
                     />
                 </div>
             </section>

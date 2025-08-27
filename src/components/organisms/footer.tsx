@@ -22,7 +22,7 @@ export default function Footer() {
               { text: "Accueil", href: "/" },
               { text: "Wiki", href: "/wiki" },
               { text: "Équipe", href: "/team" },
-              { text: "Réglement", href: "/reglement" },
+              { text: "Règlement", href: "/reglement" },
               { text: "Discord", href: "/discord" },
             ]}
           />

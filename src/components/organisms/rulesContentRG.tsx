@@ -5,19 +5,18 @@ export default function RulesContent() {
         <div>
             <RuleSection
                 id="intro"
-                title="📜 Introduction"
+                title="Introduction"
                 description="Bienvenue sur le règlement global de LastRP. Merci de le lire attentivement avant de jouer."
             />
 
             <RuleSection
                 id="definition"
-                title="🎭 Définition RP"
+                title="Définition RP"
                 description="Le RP (RolePlay) consiste à incarner un personnage fictif dans un univers donné."
             />
-
             <RuleSection
                 id="regles-principales"
-                title="⚖️ Règles principales"
+                title="Règles principales"
                 rules={[
                     "Respectez les autres joueurs en toutes circonstances.",
                     "Aucune insulte hors RP ne sera tolérée.",
@@ -27,7 +26,7 @@ export default function RulesContent() {
 
             <RuleSection
                 id="coma"
-                title="💤 Règle Coma"
+                title="Règle Coma"
                 rules={[
                     "Si votre personnage est dans le coma, vous ne pouvez pas communiquer.",
                     "Vous devez attendre un médecin pour être réanimé.",
@@ -36,13 +35,13 @@ export default function RulesContent() {
 
             <RuleSection
                 id="mort-intro"
-                title="☠️ Introduction Mort RP"
+                title="Introduction Mort RP"
                 description="La mort RP implique la fin de l’histoire de votre personnage."
             />
 
             <RuleSection
                 id="mort-rp"
-                title="⚰️ Règles Mort RP"
+                title="Règles Mort RP"
                 rules={[
                     "La mort RP doit être validée par le staff dans certains cas.",
                     "Une fois mort RP, vous perdez toutes vos possessions et relations.",
@@ -51,7 +50,7 @@ export default function RulesContent() {
 
             <RuleSection
                 id="nouveau-perso"
-                title="👤 Nouveau personnage"
+                title="Nouveau personnage"
                 description="En cas de Mort RP, vous devez recréer un nouveau personnage avec une histoire différente."
                 rules={[
                     "Vous ne pouvez pas utiliser les informations de votre ancien personnage.",
@@ -61,13 +60,13 @@ export default function RulesContent() {
 
             <RuleSection
                 id="boutique"
-                title="🛒 Information Boutique"
+                title="Information Boutique"
                 description="Les achats en boutique soutiennent le serveur mais ne sont pas remboursables."
             />
 
             <RuleSection
                 id="remboursement"
-                title="💰 Information Remboursement"
+                title="Information Remboursement"
                 description="Les remboursements sont possibles uniquement en cas de bug technique confirmé par le staff."
             />
         </div>

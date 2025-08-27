@@ -114,9 +114,10 @@ export default function DiscordPage() {
   );
     return (
     <div className="min-h-screen bg-gray-950 py-12 px-6">
-      <h1 className="text-3xl font-bold text-white mb-10 text-center">
+      <h1 className="text-3xl font-bold text-white mb-2 text-center">
         📢 Tous les Discords
       </h1>
+      <h2 className="text-xs text-gray-400 mb-10 text-center"> Merci de lire le <a href="/reglement-discord" className="text-teal-500 hover:underline">règlement de nos Discord</a> avant de nous rejoindre !</h2>
 
       {/* Champ de recherche */}
       <div className="max-w-md mx-auto mb-12">
