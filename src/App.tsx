@@ -4,6 +4,7 @@ import Reglement from "./pages/reglement";
 import ReglementGlobal from "./pages/reglementGlobal";
 import ReglementLegal from "./pages/reglementLegal";
 import ReglementIllegal from "./pages/reglementIllegal";
+import ReglementDiscord from "./pages/reglementDiscord";
 import Discord from "./pages/discord";
 import Wiki from "./pages/wiki";
 import NotFoundPage from "./pages/404";
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/reglement-global" element={<ReglementGlobal />} />
         <Route path="/reglement-legal" element={<ReglementLegal />} />
         <Route path="/reglement-illegal" element={<ReglementIllegal />} />
+        <Route path="/reglement-discord" element={<ReglementDiscord />} />
         <Route path="/discord" element={<Discord />} />
         <Route path="/wiki" element={<Wiki />} />
         <Route path="*" element={<NotFoundPage />} />
