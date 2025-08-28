@@ -28,7 +28,7 @@ export default function Navigation() {
           <NavLink href="/reglement" className="text-white hover:#14b9b9">
             Règlement
           </NavLink>
-          <div className="absolute left-0 mt-2 hidden w-48 rounded-lg bg-gray-800 shadow-lg group-hover:block">
+          <div className="absolute left-0 mt-2 hidden w-48 text-sm rounded-lg bg-gray-800 shadow-lg group-hover:block">
             <NavLink href="/reglement-global" className="block px-4 py-2 hover:bg-gray-700">
               📜 Règlement Global
             </NavLink>
@@ -37,6 +37,9 @@ export default function Navigation() {
             </NavLink>
             <NavLink href="/reglement-illegal" className="block px-4 py-2 hover:bg-gray-700">
               🔪 Règlement Illégal
+            </NavLink>
+            <NavLink href="/reglement-discord" className="block px-4 py-2 hover:bg-gray-700">
+              💬 Règlement Discord
             </NavLink>
           </div>
         </div>

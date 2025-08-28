@@ -12,7 +12,7 @@ const DISCORDS: {
 }[] = [
         {
             id: "1",
-            title: "LastRP Officiel",
+            title: "LastRP Officiel ✅",
             link: "https://discord.gg/lastfa",
             image: "src/assets/media/discord/LastRPOriginal.png",
             description: "Rejoignez le serveur officiel de LastRP pour des annonces, du support et une communauté active.",
