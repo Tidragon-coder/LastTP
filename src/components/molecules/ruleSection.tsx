@@ -1,12 +1,23 @@
 import { useState } from "react";
 import RuleItem from "../atoms/ruleItem";
 
+type Regle = {
+  title?: string;
+  description?: string;
+};
+type Alert = {
+  type: "info" | "warning";
+  message: string;
+};
+
 type RuleSectionProps = {
   id: string;
   title: string;
   description?: string;
-  rules?: string[];
-  level?: number; // 0 = section principale, 1 = sous-section, 2 = sous-sous-section
+  rules?: Regle[];
+  txtend?: string;
+  alert?: Alert[];
+  level?: number;
 };
 
 export default function RuleSection({
@@ -14,10 +25,11 @@ export default function RuleSection({
   title,
   description,
   rules,
+  txtend,
+  alert,
   level = 0,
 }: RuleSectionProps) {
   const [open, setOpen] = useState(false);
-
   const indentClass = level === 0 ? "pl-0" : level === 1 ? "pl-6" : "pl-12";
   const titleSizeClass =
     level === 0 ? "text-2xl" : level === 1 ? "text-xl" : "text-lg";
@@ -35,19 +47,33 @@ export default function RuleSection({
           {open ? "▲" : "▼"}
         </span>
       </h2>
-
-
       {open && (
         <div className="pl-2">
           {description && <p className="mb-4 text-gray-300">{description}</p>}
-
           {rules && (
-            <ul className="list-decimal list-inside  text-gray-300 ml-8">
+            <ul className="text-gray-300 ml-4">
               {rules.map((rule, i) => (
-                <RuleItem key={i} text={rule} number={i + 1} />
+                <RuleItem key={i} rule={rule} number={i + 1} />
               ))}
             </ul>
           )}
+          {txtend && <p className="mt-4 text-gray-300">{txtend}</p>}
+          {alert && (
+            <div className="mt-4 space-y-3">
+              {alert.map((a, i) => (
+                <div
+                  key={i}
+                  className={`p-3 rounded-lg text-sm font-medium ${a.type === "info"
+                      ? "bg-green-900/40 border border-green-500 text-green-200"
+                      : "bg-red-900/40 border border-red-500 text-red-200"
+                    }`}
+                >
+                  {a.message}
+                </div>
+              ))}
+            </div>
+          )}
+
         </div>
       )}
     </section>

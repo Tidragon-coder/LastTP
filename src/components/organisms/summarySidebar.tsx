@@ -10,15 +10,18 @@ type Section = {
 // 📜 Règlement Global
 const RG: Section[] = [
   { id: "intro", label: "📜 Introduction" },
-  { id: "definition", label: "🎭 Définition RP" },
-  { id: "regles-principales", label: "⚖️ Règles principales" },
-  { id: "coma", label: "💤 Règle Coma" },
-  { id: "mort-intro", label: "☠️ Introduction Mort RP" },
-  { id: "mort-rp", label: "⚰️ Règles Mort RP" },
-  { id: "nouveau-perso", label: "👤 Nouveau personnage" },
-  { id: "boutique", label: "🛒 Information Boutique" },
-  { id: "remboursement", label: "💰 Information Remboursement" },
+  { id: "rgprincipale", label: "⚖️ Règles principales" },
+  { id: "avant-mort-rp", label: "⚠️ Avant une mort RP" },
+  { id: "mort-rp", label: "⚰️ La mort RP" },
+  { id: "nouveau-perso", label: "🆕 Nouveau personnage" },
+  { id: "coma", label: "💤 Le coma" },
+  { id: "entreprise", label: "🏢 Les entreprises" },
+  { id: "boutique", label: "🛒 Informations boutique" },
+  { id: "remboursementig", label: "💳 Remboursement InGame" },
+  { id: "divers", label: "📌 Règles diverses" },
+  { id: "logicielext", label: "💻 Logiciels externes" },
 ];
+
 
 // ⚖️ Règlement Légal
 const RL: Section[]  = [
