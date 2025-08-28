@@ -26,8 +26,6 @@ const RG: Section[] = [
 // ⚖️ Règlement Légal
 const RL: Section[]  = [
   { id: "intro", label: "📜 Introduction" },
-  { id: "regles-principales", label: "⚖️ Règles principales" },
-  { id: "patron", label: "💼 Devenir Patron" },
   {
     id: "entreprise",
     label: "🏢 Entreprise",
