@@ -10,6 +10,7 @@ type Section = {
 // 📜 Règlement Global
 const RG: Section[] = [
   { id: "intro", label: "📜 Introduction" },
+  { id: "language", label: "🗼 Base du langage RP" },
   { id: "rgprincipale", label: "⚖️ Règles principales" },
   { id: "avant-mort-rp", label: "⚠️ Avant une mort RP" },
   { id: "mort-rp", label: "⚰️ La mort RP" },

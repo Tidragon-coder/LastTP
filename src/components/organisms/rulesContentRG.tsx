@@ -15,6 +15,72 @@ export default function RulesContent() {
             />
 
             <RuleSection
+                id="language"
+                title="Base du langage RP"
+                description="Vous trouverez ci-dessous les termes RP de base, accompagnés de leur descriptif. Ils peuvent être appris pour les novices ou tout  simplement en rappel pour les plus habituée du RP ! "
+                rules={[
+                    {
+                        title: "MetaGaming",
+                        description: "Utiliser une information reçue en dehors du jeu (Discord, discussions HRP, etc.) pour influencer son RP."
+                    },
+                    {
+                        title: "NoFear",
+                        description: "Ne pas réagir de manière réaliste à une menace (ex. : ignorer un braquage avec des armes pointées sur soi et partir comme si de rien n’était)."
+                    },
+                    {
+                        title: "NoPainRP",
+                        description: "Ne pas jouer la douleur ou les conséquences d’une blessure (ex. : se faire tirer dessus et courir normalement, ou ne pas montrer de signes de souffrance après un accident)."
+                    },
+                    {
+                        title: "PowerGaming",
+                        description: "Effectuer des actions impossibles en réalité (ex. : survivre à un accident à haute vitesse sans conséquence, ou réussir une action sans laisser de chance à l’adversaire)."
+                    },
+                    {
+                        title: "MassRP",
+                        description: "Prendre en compte le réalisme d’une ville peuplée (ex. : éviter les contres-sens, les excès de vitesse extrêmes, ou braquer dans des lieux bondés comme un hôpital ou un poste de police)."
+                    },
+                    {
+                        title: "FreeLoot",
+                        description: "Braquer quelqu’un uniquement pour lui voler ses possessions, sans motif RP valable."
+                    },
+                    {
+                        title: "FreeKill",
+                        description: "Tuer une personne sans raison RP cohérente."
+                    },
+                    {
+                        title: "RevengeKill",
+                        description: "Revenir sur les lieux où l’on a été tué pour tuer son assassin, sans développement de scène ou de motif RP."
+                    },
+                    {
+                        title: "CarKill",
+                        description: "Utiliser un véhicule pour tuer intentionnellement en roulant sur des personnes."
+                    },
+                    {
+                        title: "Glitcher",
+                        description: "Exploiter des failles du jeu pour traverser des murs ou accéder à des zones normalement inaccessibles."
+                    },
+                    {
+                        title: "UseBug",
+                        description: "Utiliser des bugs pour obtenir un avantage interdit (ex. : dupliquer des armes, des véhicules ou des ressources)."
+                    },
+                    {
+                        title: "PowerStock / HardFarming",
+                        description: "Récolter ou stocker des ressources de manière excessive et non réaliste, perturbant l’équilibre du jeu."
+                    },
+                    {
+                        title: "ForceRP",
+                        description: "Forcer un joueur à agir d’une certaine manière sans lui laisser de choix, limitant sa liberté RP."
+                    },
+                    {
+                        title: "FearPolice",
+                        description: "Avoir une attitude réaliste de crainte envers les forces de l’ordre (ex. : éviter de les provoquer, respecter les règles de conduite en leur présence). Cela s’applique particulièrement aux gangs et organisations criminelles."
+                    }
+                ]}
+                alert={[{ type: "warning", message: "Tout non-respect de ces règles se verra sanctionné !" }]}
+                level={0}
+            />
+
+            <RuleSection
                 id="rgprincipale"
                 title="Règle principale"
                 description="Le RP (Role Play) est un style de jeu où les joueurs incarnent des personnages fictifs dans un univers donné. Le but est de créer une histoire cohérente et immersive en respectant les règles établies par la communauté et le staff du serveur."
