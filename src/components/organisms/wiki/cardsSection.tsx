@@ -13,16 +13,19 @@ export default function CardsSection() {
             title="Commencer"
             subtitle="Comment débuter sur LastRP"
             link="/wiki/Commencer"
+            icon="commencer"
           />
           <CardsPart
             title="Factions"
             subtitle="Toutes les factions disponibles"
             link="/wiki/Factions"
+            icon="team"
           />
           <CardsPart
             title="Jobs"
             subtitle="Tous les métiers disponibles"
             link="/wiki/Jobs"
+            icon="job"
           />
         </div>
       </div>

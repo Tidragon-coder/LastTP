@@ -14,24 +14,28 @@ export default function ReglementSection() {
                 subtitle="Reglementation de LastRP"
                 link="/reglement-global"
                 reglement={true}
+                icon="earth"
               />
               <CardsPart
                 title="Règlement Legal"
                 subtitle="Reglementation des métiers légaux"
                 link="/reglement-legal"
                 reglement={true}
+                icon="legal"
               />
               <CardsPart
                 title="Règlement Illégal"
                 subtitle="Reglementation des métiers illégaux"
                 link="/reglement-illegal"
                 reglement={true}
+                icon="illegal"
               />
               <CardsPart
                 title="Règlement Discord"
                 subtitle="La reglementation de nos Discord"
                 link="/reglement-discord"
                 reglement={true}
+                icon="discord"
               />
             </div>
           </div>
