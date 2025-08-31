@@ -3,6 +3,7 @@ import Header from '../components/organisms/header';
 import BgPrincip from '../components/organisms/bgPicture';
 import DescriptionSection from '../components/organisms/descriptionSection';
 import StatSection from '../components/organisms/statsSection';
+import Banniere from '../components/organisms/banniere';
 import TeamSection from '../components/organisms/teamSection';
 import Footer from '../components/organisms/footer';
 import { getPlayerCount } from '../api/fiveM';
@@ -39,12 +40,11 @@ export default function Home() {
                             ? `${nbjoueurs} ${nbjoueurs > 1 ? 'joueurs' : 'joueur'} en ligne`
                             : 'Chargement...'
                     }
-
-
                     home={true}
                 />
                 <DescriptionSection />
                 <StatSection />
+                <Banniere />
                 <TeamSection />
                 <Footer />
             </div>

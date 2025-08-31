@@ -34,7 +34,7 @@ export default function Button({
       <a
         href={href}
         className={classes}
-        target={color === 'danger' ? "_blank" : undefined}
+        target={color === 'primary' ? "_blank" : undefined}
       >
         {children}
       </a>
