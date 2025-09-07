@@ -32,20 +32,20 @@ export default function TeamSection() {
         <TeamMemberCard image={userImg} name="Tidragon_" role="Lead Développeur Web" />
 
         {/* Ligne reliant devs au gérant */}
-        <div className="absolute -bottom-8 left-0 right-0 flex justify-center">
+        {/* <div className="absolute -bottom-8 left-0 right-0 flex justify-center">
           <div className="w-1/4 h-0.5 bg-gray-600"></div>
-        </div>
+        </div> */}
       </div>
 
       {/* Branche vers gérant */}
-      <div className="flex justify-center relative mb-12">
+      {/* <div className="flex justify-center relative mb-12">
         <div className="absolute top-0 h-8 w-0.5 bg-gray-600"></div>
-      </div>
+      </div> */}
 
       {/* Gérant */}
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <TeamMemberCard image={userImg} name="Sarah Connor" role="Gérante" />
-      </div>
+      </div> */}
     </section>
   );
 }
