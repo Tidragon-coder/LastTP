@@ -59,7 +59,7 @@ export default function StatCard({ number, add, title, description }: StatCardPr
       ref={ref}
       className="flex flex-col items-center text-center text-white max-w-xs"
     >
-      <span className="text-5xl font-bold text-blue-400">
+      <span className="text-5xl font-bold text-[#20a49c]">
         {count}
         {add}
       </span>

@@ -25,7 +25,7 @@ export default function DiscordCard({ title, link, image, description }: Discord
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 self-start bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-4 py-2 rounded-lg transition"
+          className="mt-2 self-start bg-[#20a49c] hover:bg-[#14b9b9] text-white font-medium px-4 py-2 rounded-lg transition"
         >
           🚀 Rejoindre
         </a>

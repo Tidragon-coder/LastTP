@@ -12,7 +12,7 @@ export default function NavLink({ href, children, className, importante, onClick
     <a
       href={href}
       onClick={onClick}
-      className={` text-white hover:text-[#14b9b9] px-3 py-2 rounded-md font-medium ${importante ? "bg-red-700 hover:bg-red-600 hover:text-gray-300" : ""} ${className ? className : ""}`} 
+      className={` text-white hover:text-[#14b9b9] px-3 py-2 rounded-md font-medium ${importante ? "bg-red-700 hover:bg-red-600 hover:text-white" : ""} ${className ? className : ""}`} 
     >
       {children}
 

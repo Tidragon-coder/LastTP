@@ -10,7 +10,7 @@ export default function TeamMemberCard({ image, name, role }: TeamMemberCardProp
       <img 
         src={image} 
         alt={name} 
-        className="w-32 h-32 rounded-full object-cover border-4 border-blue-400"
+        className="w-32 h-32 rounded-full object-cover border-4 border-[#20a49c] shadow-lg"
       />
       <h3 className="mt-4 text-xl font-semibold">{name}</h3>
       <p className="mt-1 text-sm opacity-80">{role}</p>

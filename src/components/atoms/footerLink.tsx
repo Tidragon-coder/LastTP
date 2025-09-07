@@ -7,7 +7,7 @@ export default function FooterLink({ text, href }: FooterLinkProps) {
   return (
     <a
       href={href}
-      className="text-gray-300 hover:text-white transition-colors duration-200"
+      className="text-gray-300 hover:text-white transition-colors duration-200 hover:text-[#20a49c]"
     >
       {text}
     </a>
