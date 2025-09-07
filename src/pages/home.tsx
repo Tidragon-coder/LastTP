@@ -10,7 +10,7 @@ import { getPlayerCount } from '../api/fiveM';
 
 export default function Home() {
     useEffect(() => {
-        document.title = "LastRP - Home";
+        document.title = "Last RolePlay";
     }, []);
 
     const [nbjoueurs, setNbJoueurs] = useState<number | null>(null);
