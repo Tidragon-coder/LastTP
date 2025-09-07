@@ -11,7 +11,7 @@ export default function Wiki() {
     return (
         <>
             <Header />
-            <BgPrincip image={'src/assets/media/img-back/BGLastRP.png'} titre='Le wiki' sousTitre='Le wiki de LastRP' hSize={'50vh'} />
+            <BgPrincip image={'src/assets/media/img-back/BGLastRP.png'} titre='Le wiki'  hSize={'50vh'} />
             <CardsSection />
 
             <Footer />

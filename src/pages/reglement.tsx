@@ -11,7 +11,7 @@ export default function Wiki() {
         <>
             <Header />
             
-            <BgPrincip image={'src/assets/media/img-back/BGLastRP.png'} titre='Règlements' sousTitre='Réglementation du serveur' hSize={'50vh'}/>
+            <BgPrincip image={'src/assets/media/img-back/BGLastRP.png'} titre='Règlements'  hSize={'50vh'}/>
             <ReglementSection />
         
             <Footer />

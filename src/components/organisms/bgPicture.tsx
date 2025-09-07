@@ -1,7 +1,7 @@
 type NgPictureProps = {
   image: string;
   titre: string;
-  sousTitre: string;
+  sousTitre?: string;
   hSize?: string;
   home?: boolean;
 };
