@@ -25,7 +25,6 @@ createRoot(document.getElementById('root')!).render(
           },
         }}
       >
-
         <App />
       </Scrollbar>
     </HelmetProvider>
